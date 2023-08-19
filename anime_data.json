@@ -1,0 +1,15 @@
+[
+    {
+      "title": "Anime 1",
+      "description": "Description for Anime 1",
+      "release_year": 2000,
+      "cover_image_url": "https://example.com/anime1.jpg"
+    },
+    {
+      "title": "Anime 2",
+      "description": "Description for Anime 2",
+      "release_year": 2005,
+      "cover_image_url": "https://example.com/anime2.jpg"
+    }
+  ]
+  
