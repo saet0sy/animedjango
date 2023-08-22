@@ -1,15 +1,74 @@
 [
-    {
-      "title": "Anime 1",
-      "description": "Description for Anime 1",
-      "release_year": 2000,
-      "cover_image_url": "https://example.com/anime1.jpg"
-    },
-    {
-      "title": "Anime 2",
-      "description": "Description for Anime 2",
-      "release_year": 2005,
-      "cover_image_url": "https://example.com/anime2.jpg"
-    }
-  ]
-  
+  {
+    "title": "Атака титанов",
+    "description": "Описание аниме \"Атака титанов\"",
+    "release_year": 2013,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_shingeki-no-kyojin.jpg",
+    "trailer_url": "https://www.youtube.com/embed/8pEg8NrdL_Y",
+    "genres": ["Экшен", "Драма", "Фэнтези"]
+  },
+  {
+    "title": "Мастера меча онлайн",
+    "description": "Аниме о людях, попавших в виртуальную онлайн-ролевую игру, где ставки высоки: смерть в игре означает смерть в реальной жизни.",
+    "release_year": 2012,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_sword-art-online.jpg",
+    "trailer_url": "https://www.youtube.com/embed/6ohYYtxfDCg",
+    "genres": ["Фэнтези", "Романтика"]
+  },
+  {
+    "title": "Покемон",
+    "description": "Приключения юного Тренера Покемонов и его друзей, которые стремятся стать самыми лучшими в этом мире с партнерами-покемонами.",
+    "release_year": 1997,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_pokemon.jpg",
+    "trailer_url": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "genres": ["Приключения", "Фэнтези"]
+  },
+  {
+    "title": "Дорога юности",
+    "description": "Группа путешественников исследует постапокалиптический мир, наполненный опасностями и загадками, в надежде найти сказочный рай.",
+    "release_year": 2013,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_ao-haru-ride.jpg",
+    "trailer_url": "https://www.youtube.com/embed/WjkiPyDWHME",
+    "genres": ["Драма", "Романтика"]
+  },
+  {
+    "title": "Реинкарнация безработного",
+    "description": "После смерти парень перерождается в магическом мире и обретает новые способности, начиная свое путешествие вновь.",
+    "release_year": 2019,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_mushoku-tensei.jpg",
+    "trailer_url": "https://www.youtube.com/embed/jSCKo90DMK4",
+    "genres": ["Фэнтези", "Приключения"]
+  },
+  {
+    "title": "Ковбой Бибоп",
+    "description": "Истории о двух охотниках за преступниками в далеком будущем, где межзвездные путешествия и криминал тесно переплетаются.",
+    "release_year": 1998,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_cowboy-bebop.jpg",
+    "trailer_url": "https://www.youtube.com/embed/OhNwckCLzis",
+    "genres": ["Боевики", "Драма"]
+  },
+  {
+    "title": "Тетрадь смерти",
+    "description": "Подросток обретает сверхъестественную силу убивать людей, записывая их имена в тетрадь, и начинает бороться с преступностью.",
+    "release_year": 2006,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_death-note.jpg",
+    "trailer_url": "https://www.youtube.com/embed/9BxbETVKSLk",
+    "genres": ["Детектив", "Фэнтези"]
+  },
+  {
+    "title": "Охотник х Охотник",
+    "description": "Молодой охотник Гон и его друзья исследуют мир, полный опасных монстров и загадочных тайн, в поисках приключений.",
+    "release_year": 2011,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_hunter-x-hunter.jpg",
+    "trailer_url": "https://www.youtube.com/embed/d6kBeJjTGnY",
+    "genres": ["Приключения", "Боевики"]
+  },
+  {
+    "title": "Синий экзорцист",
+    "description": "Сын сатаны решает стать экзорцистом и бороться с демонами, вступая в академию для подготовки борцов с нечистью.",
+    "release_year": 2011,
+    "cover_image_url": "https://gen.jut.su/uploads/animethumbs/anime_blue-exorcist.jpg",
+    "trailer_url": "https://www.youtube.com/embed/rNlKIMdW4x8",
+    "genres": ["Фэнтези", "Боевики"]
+  }
+]

@@ -17,8 +17,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from anime.views import AnimeViewSet
+from anime.views import anime_list
+from anime.views import anime_detail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('anime/', AnimeViewSet.as_view({'get': 'list'}), name='anime-list'),
+    # path('anime/', AnimeViewSet.as_view({'get': 'list'}), name='anime-list'),
+    path('anime/', anime_list, name='anime-list'),
+    path('anime/<int:anime_id>/', anime_detail, name='anime_detail'),
+    
 ]

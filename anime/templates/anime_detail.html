@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card mb-4">
+        <img src="{{ anime.cover_image_url }}" class="card-img-top" alt="{{ anime.title }}">
+        <div class="card-body">
+            <h5 class="card-title">{{ anime.title }}</h5>
+            <p class="card-text">{{ anime.description }}</p>
+            <p class="card-text"><strong>Genres:</strong>
+                {% for genre in anime.genres.all %}
+                    {{ genre.name }}
+                    {% if not forloop.last %}, {% endif %}
+                {% endfor %}
+            </p>
+        </div>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="{{ anime.trailer_url }}?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+{% endblock %}

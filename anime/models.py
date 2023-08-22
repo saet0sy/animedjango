@@ -14,6 +14,11 @@ class Anime(models.Model):
     release_year = models.IntegerField()
     cover_image_url = models.CharField(max_length=200)
     genres = models.ManyToManyField('Genre', through='AnimeGenre')
+    trailer_url = models.URLField(blank=True)  # Добавленное поле для ссылки на видео-трейлер
+    
+    def __str__(self):
+        return self.title
+    
 
 class Genre(models.Model):
     name = models.CharField(max_length=100)

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Catalog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        a {
+            color: #ffffff;
+            /* Исходный цвет ссылки */
+            text-decoration: none;
+            /* Убираем подчеркивание ссылки */
+        }
+
+        a:active,
+        a:focus {
+            color: #a7afb7;
+            /* Исходный цвет ссылки */
+            outline: none;
+            /* Убираем контур вокруг ссылки в состоянии фокуса */
+        }
+
+        body {
+            background-color: #333;
+            color: #fff;
+            font-family: 'Font Name', sans-serif;
+        }
+
+        .navbar {
+            background-color: #222;
+        }
+
+        .navbar .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+        }
+
+        #anime-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* Центрируем элементы */
+            gap: 20px;
+            /* Расстояние между элементами */
+        }
+
+        .card {
+            text-align: center;
+            /* Центрируем текст */
+        }
+
+        .card-title {
+            font-size: 24px;
+            /* Изменяем размер текста названия аниме */
+            margin-top: 10px;
+            /* Добавляем отступ сверху */
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand">Satoshi Anime Catalog</a>
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/anime">Anime List</a>
+                        </li>
+                        <!-- Добавьте дополнительные пункты меню здесь -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Anime Catalog</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-KyZXEAg3pSLFiM8f+4F5Rvbax4VaB+nLH8L2rpJAYB9F1aaRaXHloO5I5suW6JBo"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

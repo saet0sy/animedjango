@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Ваши мета-теги и подключения стилей Bootstrap -->
+</head>
+<body>
+    <header>
+        <!-- Ваша навигационная панель -->
+    </header>
+    
+    <main class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="anime_image.jpg" class="card-img-top" alt="Anime Title">
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Title</h5>
+                        <p class="card-text">Description for Anime</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="anime_image.jpg" class="card-img-top" alt="Anime Title">
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Title</h5>
+                        <p class="card-text">Description for Anime</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="anime_image.jpg" class="card-img-top" alt="Anime Title">
+                    <div class="card-body">
+                        <h5 class="card-title">Anime Title</h5>
+                        <p class="card-text">Description for Anime</p>
+                        <a href="#" class="btn btn-primary">Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-3">
+        <p>&copy; 2023 Anime Catalog</p>
+    </footer>
+    <!-- Вставьте скрипты Bootstrap JavaScript и другие скрипты здесь -->
+    <script>
+    // Функция для создания карточки аниме
+    function createAnimeCard(anime) {
+        const card = document.createElement('div');
+        card.classList.add('col-md-4');
+        card.innerHTML = `
+            <div class="card mb-4">
+                <img src="${anime.cover_image_url}" class="card-img-top" alt="${anime.title}">
+                <div class="card-body">
+                    <h5 class="card-title">${anime.title}</h5>
+                    <p class="card-text">${anime.description}</p>
+                    <a href="#" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        `;
+        return card;
+    }
+
+    // Функция для загрузки данных и отображения карточек аниме
+    async function loadAnimeData() {
+        try {
+            const response = await fetch('/api/anime/');
+            const data = await response.json();
+            const animeList = document.getElementById('anime-list');
+            
+            data.forEach(anime => {
+                const card = createAnimeCard(anime);
+                animeList.appendChild(card);
+            });
+        } catch (error) {
+            console.error('Error loading anime data:', error);
+        }
+    }
+
+    // Загрузка данных при загрузке страницы
+    window.addEventListener('load', loadAnimeData);
+</script>
+</body>
+</html>

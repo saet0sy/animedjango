@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row" id="anime-list d-flex flex-wrap">
+    {% for anime in anime_list %}
+    <div class="col-md-4">
+        <div class="card mb-4">
+            <img src="{{ anime.cover_image_url }}" class="card-img-top" alt="{{ anime.title }}">
+            <div class="card-body">
+                <h5 class="card-title"><a href="{% url 'anime_detail' anime.id %}">{{ anime.title }}</a></h5>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

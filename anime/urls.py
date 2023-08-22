@@ -1,6 +1,7 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from .views import UserViewSet, AnimeViewSet, GenreViewSet, ReviewViewSet, RatingViewSet
+from .views import anime_list
 
 router = DefaultRouter()
 router.register(r'users', UserViewSet)
@@ -11,6 +12,7 @@ router.register(r'ratings', RatingViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
-    path('anime/', AnimeViewSet.as_view({'get': 'list'}), name='anime-list'),
+    # path('anime/', AnimeViewSet.as_view({'get': 'list'}), name='anime-list'),
+    # path('anime/', anime_list, name='anime-list'),
     
 ]

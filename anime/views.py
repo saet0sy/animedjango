@@ -7,7 +7,12 @@ from rest_framework import filters
 from django.shortcuts import render
 
 def anime_list(request):
-    return render(request, 'templates.index.html')
+    anime_list = Anime.objects.all()
+    return render(request, 'anime_list.html', {'anime_list': anime_list})
+
+def anime_detail(request, anime_id):
+    anime = Anime.objects.get(id=anime_id)
+    return render(request, 'anime_detail.html', {'anime': anime})
 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
